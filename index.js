@@ -1,44 +1,34 @@
-function Navbar() {
-    return (
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown link
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-                </ul>
-            </div>
-        </nav>
-
-    )
-}
-
-function MainContent() {
-    return (
-        <h1>I'm learning React!</h1>
-    )
-}
-ReactDOM.createRoot(document.getElementById('root')).render(<div><Navbar />
-                                                            <MainContent /></div>);
+// create new h1 elemet
+// give it some textContent
+// give it a class name of "header"
 
 
+
+// append it as a child of the div#root
+const h1 = document.createElement("h1")
+h1.textContent = "I'm learing React Course"
+h1.className = "header"
+document.getElementById("root").append(h1)
+console.log(h1)
+
+
+const element = (<h2 className="header">This is JSX</h2>)
+console.log(element)
+
+ReactDOM.createRoot(document.getElementById('root')).render(element);
+
+
+// challenge:
+const navbar = (
+    <nav>
+        <h1>My page</h1>
+        <ul>
+            <li>About me</li>
+            <li>Resume</li>
+            <li>contact me</li>
+        </ul>
+
+    </nav>
+
+)
+ReactDOM.createRoot(document.getElementById('root')).render(navbar);
