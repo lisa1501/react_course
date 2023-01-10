@@ -4,17 +4,32 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+function Header(){
+    return (
+        <header>
+        <nav>
+            <img src="./react-logo.png" width="40px" />
+            <ul>
+                <li>Pricing</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
 
-function Page(){
+    )
+}
+function Footer(){
+    return (
+        <footer>
+                <small>© Saipulla development. all rights reserved.</small>
+            </footer>
+    )
+}
+
+function MainContent(){
     return (
         <div>
-            <header>
-                <nav>
-                <img src="./react-logo.png" width="40px" />
-                </nav>
-            </header>
-            
             <h1>Fun facts about React</h1>
             <ol>
                 <li>Was first released in 2013</li>
@@ -23,12 +38,23 @@ function Page(){
                 <li>Is Maitained by Facebook</li>
                 <li>Powers thousands of enterprise apps, including mobile apps</li>        
             </ol>
-            <footer>
-                <small>© Saipulla development. all rights reserved.</small>
-            </footer>
+
+        </div>
+
+    )
+}
+function Page(){
+    return (
+        <div>
+            <Header />
+            <MainContent />
+            
+            <Footer />
         </div>
     )
 }
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
 //   <React.StrictMode>
 //     <App />
