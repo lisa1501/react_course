@@ -9,16 +9,24 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 function Page(){
     return (
         <div>
-        <img src="./react-logo.png" width="40px" />
-        <h1>Fun facts about React</h1>
-        <ul>
-            <li>Was first released in 2013</li>
-            <li>Was originally created by Jordan Walkes</li>
-            <li>Has well over 100k stars on Github</li>
-            <li>Is Maitained by Facebook</li>
-            <li>Powers thousands of enterprise apps, including mobile apps</li>        
-        </ul>
-    </div>
+            <header>
+                <nav>
+                <img src="./react-logo.png" width="40px" />
+                </nav>
+            </header>
+            
+            <h1>Fun facts about React</h1>
+            <ol>
+                <li>Was first released in 2013</li>
+                <li>Was originally created by Jordan Walkes</li>
+                <li>Has well over 100k stars on Github</li>
+                <li>Is Maitained by Facebook</li>
+                <li>Powers thousands of enterprise apps, including mobile apps</li>        
+            </ol>
+            <footer>
+                <small>© Saipulla development. all rights reserved.</small>
+            </footer>
+        </div>
     )
 }
 root.render(
