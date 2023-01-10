@@ -1,12 +1,14 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     margin: 0;
     font-family: inter, sans-serif;
     height: 100vh;
     background-color: black;
 }
+
 nav {
     display: flex;
     align-items: center;
@@ -16,17 +18,17 @@ nav {
 
 }
 
-.nav--logo_text, .nav--title{
+.nav--logo_text, .nav--title {
     margin: 0;
 }
+
 .nav--logo_text {
     margin-right: auto;
     color: #61DAFB;
     font-weight: 700;
     font-size: 22px;
-
-
 }
+
 .nav--title {
     margin-right: auto;
     color: white;
@@ -45,7 +47,6 @@ nav > img {
 }
 
 main {
-    
     padding: 57px 27px;
     color: white;
 }
@@ -59,11 +60,16 @@ main {
 
 .main--facts {
     margin-top: 46px;
+    max-width: 400px;
 }
 
 .main--facts > li {
-    margin-top: 40px;
-    max-width: 400px;
     line-height: 19px;
     padding-block: 10px;
+}
+
+.main--facts >li::marker {
+    font-size: 1.4rem;
+    color: #61DAFB;
+
 }
