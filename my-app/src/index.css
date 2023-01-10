@@ -1,26 +1,11 @@
-/* .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.nav-logo {
-    width: 60px;
-}
-:nav-items {
-    list-style: none;
-    display: flex;
-}
-.nav-items > li {
-    padding: 10px;
-} */
-
-
 * {
     box-sizing: border-box;
 }
 body {
     margin: 0;
     font-family: inter, sans-serif;
+    height: 100vh;
+    background-color: black;
 }
 nav {
     display: flex;
@@ -49,7 +34,36 @@ nav {
 
 }
 
+.nav--icon {
+    height: 30px;
+    margin-right: 7px;
+}
+
 nav > img {
     height: 50px;
     margin-right: 70px;
+}
+
+main {
+    
+    padding: 57px 27px;
+    color: white;
+}
+
+.main--title {
+    margin: 0;
+    font-size: 39px;
+    letter-spacing: -0.05em;
+
+}
+
+.main--facts {
+    margin-top: 46px;
+}
+
+.main--facts > li {
+    margin-top: 40px;
+    max-width: 400px;
+    line-height: 19px;
+    padding-block: 10px;
 }
