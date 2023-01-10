@@ -6,7 +6,7 @@ body {
     margin: 0;
     font-family: inter, sans-serif;
     height: 100vh;
-    background-color: black;
+    background-color:#282d35;
 }
 
 nav {
@@ -49,6 +49,10 @@ nav > img {
 main {
     padding: 57px 27px;
     color: white;
+    background-image: url(./images/React-logo-large.png);
+    background-repeat: no-repeat;
+    background-position: right 75%;
+    
 }
 
 .main--title {
@@ -73,3 +77,10 @@ main {
     color: #61DAFB;
 
 }
+
+/* .nav--icon {
+    height: 30px;
+    margin-left: 7px;
+    background-repeat: no-repeat;
+    background-position: right 75%;
+} */
