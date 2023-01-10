@@ -1,4 +1,4 @@
-.nav {
+/* .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,4 +12,44 @@
 }
 .nav-items > li {
     padding: 10px;
+} */
+
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: inter, sans-serif;
+}
+nav {
+    display: flex;
+    align-items: center;
+    background-color:black;
+    height: 90px;
+    padding: 30px 25px;
+
+}
+
+.nav--logo_text, .nav--title{
+    margin: 0;
+}
+.nav--logo_text {
+    margin-right: auto;
+    color: #61DAFB;
+    font-weight: 700;
+    font-size: 22px;
+
+
+}
+.nav--title {
+    margin-right: auto;
+    color: white;
+    font-weight: 700;
+
+}
+
+nav > img {
+    height: 50px;
+    margin-right: 70px;
 }
