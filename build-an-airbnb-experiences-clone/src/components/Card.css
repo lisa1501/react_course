@@ -1,3 +1,6 @@
+div {
+    padding: 20px;
+}
 
 .card {
     width: 175px;
@@ -10,11 +13,13 @@
 }
 
 .card--status {
+
     display: flex;
     align-items: center;
 }
 
 .card--star {
+    
     height: 14px;
 
 }
