@@ -1,17 +1,18 @@
 const data=[
     {
-    id:1,
-    title:"Learn Wedding Photography",
-    description:"Interested ..........",
-    price:126,
-    coverImg:"card-photo..png",
-    status:{
-        rating:5.0,
-        reviewCount:30
+        id:1,
+        title:"Learn Wedding Photography",
+        description:"Interested ..........",
+        price:126,
+        coverImg:"card-photo.png",
+        status:{
+            rating:5.0,
+            reviewCount:30
+        },
+        location:"USA",
+        openSpots:0
     },
-    location:"Online",
-    openSpots:27
-},
+    
 {
     id:2,
     title:"Learn Wedding Photography",
@@ -52,7 +53,7 @@ const data=[
     openSpots:27
 },
 
-    
+
     
 ]
 export default data;
