@@ -1,5 +1,4 @@
 import React from "react";
-// import experiencesPhoto from "../images/photo-grid.png"
 import "./Hero.css"
 function Hero() {
     return (
