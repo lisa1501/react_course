@@ -1,6 +1,6 @@
 import React from "react";
-import cardPhoto from "../images/card-photo.png"
-import starPhoto from "../images/star.png"
+// import cardPhoto from "../images/card-photo.png"
+// import starPhoto from "../images/star.png"
 import "./Card.css"
 function Card(props) {
     console.log(props)
@@ -8,7 +8,7 @@ function Card(props) {
         <div className="card">
             <img src={`../images/${props.img}`} className="card--photo"/>
             <div className="card--status">
-                <img src={starPhoto} className="card--star"/>
+                <img src={"../images/star.png"} className="card--star"/>
                 <span>{props.rating}</span>
                 <span className="gray">({props.reviewCount})·</span>
                 <span className="gray">{props.country}</span>
