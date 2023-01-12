@@ -23,8 +23,8 @@ function Card(props) {
                 <span className="gray">({props.item.status.reviewCount})·</span>
                 <span className="gray">{props.item.location}</span>
             </div>
-            <p>{props.item.title}</p>
-            <p><span className="bold">From ${props.item.price}</span> / person</p>
+            <p className="card--title">{props.item.title}</p>
+            <p className="card--price"><span className="bold">From ${props.item.price}</span> / person</p>
         </div>
     )
 }
