@@ -1,6 +1,4 @@
 import React from "react";
-// import cardPhoto from "../images/card-photo.png"
-// import starPhoto from "../images/star.png"
 import "./Card.css"
 function Card(props) {
     console.log(props.item)
